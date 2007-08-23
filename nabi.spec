@@ -28,13 +28,17 @@ make
 %makeinstall_std
 
 # menu entry:
-mkdir -p $RPM_BUILD_ROOT/%_menudir
-cat >$RPM_BUILD_ROOT%_menudir/nabi<<EOF
-?package(%name): needs="x11" section="More applications/Accessibility" \
-         title="Nabi" \
-         longtitle="Simple Hangul XIM" \
-         command="%_bindir/%name" \
-		 icon="%name.png"
+mkdir -p $RPM_BUILD_ROOT/%{_datadir}/applications/mandriva-%{name}.desktop
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Name=Nabi
+Comment=Simple Hangul XIM
+Exec=%name
+Icon=%{name}
+Terminal=false
+Type=Application
+Categories=System;Settings;Accessibility;X-MandrivaLinux-System-Configuration-GNOME-Accessibility;
 EOF
 
 mkdir -p $RPM_BUILD_ROOT%_iconsdir/
@@ -57,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %_bindir/nabi
 %_datadir/nabi
 %_iconsdir/%name.png
-%_menudir/%name
+%{_datadir}/applications/mandriva-%{name}.desktop
