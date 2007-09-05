@@ -7,7 +7,7 @@ License: GPL
 URL: http://nabi.kldp.net
 Source: http://download.kldp.net/%name/%name-%version.tar.bz2
 BuildRequires: gtk2-devel >= 2.4.0
-BuildRequires: libhangul-devel
+BuildRequires: libhangul-devel >= 0.0.6
 Requires: locales-ko
 BuildRoot: %_tmppath/%name-%version-root
 
