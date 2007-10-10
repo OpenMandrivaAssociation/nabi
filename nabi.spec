@@ -5,7 +5,7 @@ Release: %mkrel 1
 Group: System/Internationalization
 License: GPL
 URL: http://nabi.kldp.net
-Source: http://download.kldp.net/%name/%name-%version.tar.bz2
+Source: http://download.kldp.net/%name/Nabi/%version/%name-%version.tar.bz2
 BuildRequires: gtk2-devel >= 2.4.0
 BuildRequires: libhangul-devel >= 0.0.6
 Requires: locales-ko
