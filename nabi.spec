@@ -14,7 +14,7 @@ BuildRoot: %_tmppath/%name-%version-root
 %description
 Nabi is a simple XIM for Korean, implemented with GTK+2.
 It can dock in the notification area, and also show the
-status of imhangul(See also http://imhangul.kldp.net).
+status of imhangul (See also http://imhangul.kldp.net).
 
 %prep
 rm -rf $RPM_BUILD_ROOT
