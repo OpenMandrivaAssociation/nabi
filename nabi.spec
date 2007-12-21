@@ -9,6 +9,7 @@ Source: http://download.kldp.net/%name/Nabi/%version/%name-%version.tar.lzma
 BuildRequires: gtk2-devel >= 2.4.0
 BuildRequires: libhangul-devel >= 0.0.6
 Requires: locales-ko
+BuildRoot: %_tmppath/%name-%version-root
 
 %description
 Nabi is a simple XIM for Korean, implemented with GTK+2.
