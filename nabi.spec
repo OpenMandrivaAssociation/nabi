@@ -1,6 +1,6 @@
 Summary: Simple Hangul X Input Method
 Name:   nabi
-Version: 0.19
+Version: 0.99.0
 Release: %mkrel 1
 Group: System/Internationalization
 License: GPL
