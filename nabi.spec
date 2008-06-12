@@ -45,11 +45,15 @@ install -m 644 nabi.png $RPM_BUILD_ROOT%_iconsdir/
 
 %find_lang %name
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %update_menus
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
