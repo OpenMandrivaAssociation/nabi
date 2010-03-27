@@ -1,15 +1,15 @@
-Summary: Simple Hangul X Input Method
-Name:   nabi
-Version: 0.99.4
-Release: %mkrel 1
-Group: System/Internationalization
-License: GPL
-URL: http://nabi.kldp.net
-Source: http://download.kldp.net/%name/Nabi/%version/%name-%version.tar.lzma
-BuildRequires: gtk2-devel >= 2.4.0
-BuildRequires: libhangul-devel >= 0.0.6
-Requires: locales-ko
-BuildRoot: %_tmppath/%name-%version-root
+Summary:	Simple Hangul X Input Method
+Name:		nabi
+Version:	0.99.7
+Release:	%mkrel 1
+Group:		System/Internationalization
+License:	GPLv2
+URL:		http://nabi.kldp.net
+Source:		http://download.kldp.net/%name/Nabi/%version/%name-%version.tar.gz
+BuildRequires:	gtk2-devel >= 2.4.0
+BuildRequires:	libhangul-devel >= 0.0.6
+Requires:	locales-ko
+BuildRoot:	%_tmppath/%name-%version-root
 
 %description
 Nabi is a simple XIM for Korean, implemented with GTK+2.
@@ -21,8 +21,8 @@ rm -rf $RPM_BUILD_ROOT
 %setup -q 
 
 %build
-%configure
-make
+%configure2_5x
+%make
 
 %install
 %makeinstall_std
