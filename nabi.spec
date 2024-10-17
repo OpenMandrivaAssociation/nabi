@@ -4,7 +4,7 @@ Version:	1.0.0
 Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
-URL:		http://code.google.com/p/nabi
+URL:		https://code.google.com/p/nabi
 Source:		http://%{name}.googlecode.com/files/%{name}-%{version}.tar.gz
 BuildRequires:	librsvg
 BuildRequires:	pkgconfig(gtk+-2.0)
