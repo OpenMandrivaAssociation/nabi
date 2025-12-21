@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		System/Internationalization
 URL:		https://code.google.com/p/nabi
 Source:		http://%{name}.googlecode.com/files/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	librsvg
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libhangul)
